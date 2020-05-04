@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".splash.SplashActivity">
+
+    <RelativeLayout
+        android:id="@+id/splash_activity_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/splash_activity_imageview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/splash_activity_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/splash_activity_imageview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:text="哈尔滨地铁"
+            android:textColor="#F70505"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/splash_activity_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/splash_activity_textView1"
+            android:layout_centerHorizontal="true"
+            android:text="Harbin Metro"
+            android:textColor="#FE0101"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

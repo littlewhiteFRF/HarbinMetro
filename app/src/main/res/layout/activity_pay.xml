@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAD6D6"
+    tools:context=".pay.PayActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/pay_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <RelativeLayout
+        android:id="@+id/pay_activity_relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/pay_activity_toolbar"
+        android:layout_marginTop="10dp"
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/pay_activity_textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="订单信息"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="20sp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/pay_activity_relativelayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pay_activity_textview2"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/pay_activity_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="test"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_toLeftOf="@id/pay_activity_imageview"/>
+            <ImageView
+                android:id="@+id/pay_activity_imageview"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_action_arrow_right"/>
+            <TextView
+                android:id="@+id/pay_activity_finish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/pay_activity_imageview"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="test"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pay_activity_relativelayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pay_activity_relativelayout3"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/pay_activity_textview3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="票价："
+                android:layout_marginLeft="200dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/pay_activity_ticket_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/pay_activity_textview3"
+                android:text="test"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#F30A0A"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pay_activity_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/pay_activity_relativelayout1"
+        android:background="#FFF"
+        android:paddingLeft="10dp"
+        android:text="请选择支付方式："
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/pay_activity_relativelayout2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/pay_activity_textview"
+        android:layout_alignParentBottom="true"
+        android:background="#FFF">
+
+        <ListView
+            android:id="@+id/pay_activity_select_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+    </RelativeLayout>
+</RelativeLayout>

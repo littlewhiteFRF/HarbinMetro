@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_register"
+    tools:context=".metrotime.MetroTimeActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/metro_time_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/metro_time_activity_cardview1"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="#ECECE4"
+        app:cardElevation="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/metro_time_activity_cardview1_textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/ic_line_red"
+                android:text="一号线"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/metro_time_activity_cardview1_textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/metro_time_activity_cardview1_textview1"
+                android:layout_centerInParent="true"
+                android:text="哈东站——哈南站"
+                android:textColor="#000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/metro_time_activity_cardview2"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/metro_time_activity_cardview1"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="#ECECE4"
+        app:cardElevation="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/metro_time_activity_cardview2_textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/ic_line_orange"
+                android:text="三号线"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/metro_time_activity_cardview2_textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/metro_time_activity_cardview2_textview1"
+                android:layout_centerInParent="true"
+                android:text="医大二院站——哈尔滨西站"
+                android:textColor="#000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".searchline.SearchLineActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/search_line_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/search_line_activity_textview"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@id/search_line_activity_toolbar"
+        android:layout_marginTop="5dp"
+        android:background="#E0DDDD"
+        android:paddingLeft="88dp"
+        android:text="哈尔滨地铁线路"
+        android:textColor="#050505"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/search_line_activity_relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/search_line_activity_textview"
+        android:layout_marginTop="10dp"
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/search_line_activity_start_line_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_line_change"
+            android:text="起点线路"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:id="@+id/search_line_activity_relativelayout_start_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_line_activity_start_line_textview"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/search_line_activity_change_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="请选择"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <Spinner
+                android:id="@+id/search_line_activity_start_line_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/search_line_activity_change_line"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/search_line_activity_start_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_line_activity_relativelayout_start_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_start_station"
+            android:text="起点"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:id="@+id/search_line_activity_relativelayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_line_activity_start_station"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/search_line_activity_change1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="请选择"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <Spinner
+                android:id="@+id/search_line_activity_start_station_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/search_line_activity_change1"
+
+                />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/search_line_activity_dash_line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/search_line_activity_relativelayout2"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dash_line"
+            android:layerType="software" />
+
+        <TextView
+            android:id="@+id/search_line_activity_finish_line_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_line_activity_dash_line1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_line_change"
+            android:text="终点线路"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:id="@+id/search_line_activity_relativelayout_finish_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_line_activity_finish_line_textview"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/search_line_activity_change_line3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="请选择"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <Spinner
+                android:id="@+id/search_line_activity_finish_line_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/search_line_activity_change_line3"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/search_line_activity_finish_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_line_activity_relativelayout_finish_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_finish_station"
+            android:text="终点"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:id="@+id/search_line_activity_relativelayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_line_activity_finish_station"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/search_line_activity_change2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="请选择"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <Spinner
+                android:id="@+id/search_line_activity_finish_station_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/search_line_activity_change2"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/search_line_activity_button"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/search_line_activity_relativelayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/sale_ticket_activity_button_shape"
+        android:text="查询线路"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

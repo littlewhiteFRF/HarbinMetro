@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6D5D5"
+    tools:context=".contact.ContactActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/contact_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/contact_activity_toolbar">
+        <ListView
+            android:id="@+id/contact_activity_listview"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFF">
+
+        </ListView>
+        <Button
+            android:id="@+id/contact_activity_contact_button"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/contact_activity_listview"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sale_ticket_activity_button_shape"
+            android:text="联系客服"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+</RelativeLayout>

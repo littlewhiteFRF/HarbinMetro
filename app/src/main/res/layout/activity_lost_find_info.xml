@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_register"
+    tools:context=".lostfindinfo.LostFindInfoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/lost_find_info_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_below="@id/lost_find_info_activity_toolbar"
+        android:background="#F5F2F2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/lost_find_info_activity_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/lost_find_info_activity_imageview"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/lost_find_info_activity_title"
+                android:layout_margin="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/lost_find_info_activity_relativelayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@id/lost_find_info_activity_imageview">
+                <TextView
+                    android:id="@+id/lost_find_info_activity_textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="特征描述："
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/lost_find_info_activity_feature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/lost_find_info_activity_textview1"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lost_find_info_activity_relativelayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@id/lost_find_info_activity_relativelayout1">
+                <TextView
+                    android:id="@+id/lost_find_info_activity_textview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="拾取时间："
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/lost_find_info_activity_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/lost_find_info_activity_textview2"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lost_find_info_activity_relativelayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@id/lost_find_info_activity_relativelayout2">
+                <TextView
+                    android:id="@+id/lost_find_info_activity_textview3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="拾取地点："
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/lost_find_info_activity_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/lost_find_info_activity_textview3"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lost_find_info_activity_relativelayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@id/lost_find_info_activity_relativelayout3">
+                <TextView
+                    android:id="@+id/lost_find_info_activity_textview4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发布者："
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/lost_find_info_activity_publisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/lost_find_info_activity_textview4"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

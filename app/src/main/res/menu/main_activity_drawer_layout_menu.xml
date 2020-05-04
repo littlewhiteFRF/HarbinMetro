@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/main_activity_drawer_layout_bind_pay"
+            android:icon="@drawable/ic_action_bind_pay"
+            android:title="绑定支付账号" />
+        <item
+            android:id="@+id/main_activity_drawer_layout_money_search"
+            android:icon="@drawable/ic_action_money_search"
+            android:title="余额查询" />
+        <item
+            android:id="@+id/main_activity_drawer_layout_money_add"
+            android:icon="@drawable/ic_action_money_add"
+            android:title="账户充值" />
+    </group>
+</menu>

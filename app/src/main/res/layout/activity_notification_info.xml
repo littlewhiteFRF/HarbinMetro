@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/notification_info_bg"
+    tools:context=".notificationinfo.NotificationInfoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/notification_info_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/notification_info_activity_toolbar">
+        <TextView
+            android:id="@+id/notification_info_activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <View
+            android:id="@+id/notification_info_activity_dash_line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/notification_info_activity_title"
+            android:layout_margin="10dp"
+            android:background="@drawable/dash_line"
+            android:layerType="software" />
+
+        <TextView
+            android:id="@+id/notification_info_activity_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@id/notification_info_activity_dash_line1"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/notification_info_activity_publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notification_info_activity_dash_line1"
+            android:layout_marginLeft="240dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <ScrollView
+            android:id="@+id/notification_info_activity_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/notification_info_activity_date"
+            android:layout_marginTop="8dp"
+            >
+            <TextView
+                android:id="@+id/notification_info_activity_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

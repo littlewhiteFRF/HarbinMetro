@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.frf.harbinmetro">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 连接网络权限 INTERNET ，用于请求广告 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 读内存 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 用于精确统计用户手机的系统信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 用于精确识别网络接入点等信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 使用WIFI获取用户精确定位信息 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 有助于实现图片资源的缓存,节省流量,并可获得更好的用户体验 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 有助于精准投放地域广告以及帮助统计使用应用程序的用户的地区分布情况 -->
+    <!-- 以下为可选权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> <!-- 以下为可选权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!--开启允许安装权限 -->
+
+    <application
+        android:name=".util.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/harbin_metro_logo_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/harbin_metro_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".contact.QuestionInfoActivity"></activity>
+        <activity android:name=".bindaccount.BindAccountActivity" />
+        <activity android:name=".register.SetInfoActivity" />
+        <activity android:name=".messageboard.MessageInfoActivity" />
+        <activity android:name=".messageboard.MyMessageActivity" />
+        <activity android:name=".goodsinfo.GoodsInfoActivity" />
+        <activity android:name=".payinfo.PayInfoActivity" />
+        <activity android:name=".addmoney.AddMoneyActivity" />
+        <activity android:name=".searchmoney.SearchMoneyActivity" />
+        <activity android:name=".myinfo.UpdateUserNameActivity" />
+        <activity android:name=".notificationinfo.NotificationInfoActivity" />
+        <activity android:name=".lostfindinfo.LostFindInfoActivity" />
+        <activity android:name=".myinfo.MyInfoActivity" />
+        <activity android:name=".goods.GoodsActivity" />
+        <activity android:name=".outgoing.OutgoingActivity" />
+        <activity android:name=".explain.ExplainActivity" />
+        <activity android:name=".aboutus.AboutUsActivity" />
+        <activity android:name=".metrotimeinfo.MetroTimeInfoActivity" />
+        <activity android:name=".lineinfo.LineInfoActivity" />
+        <activity android:name=".stationinfo.StationInfoActivity" />
+        <activity android:name=".messageboard.MessageBoardActivity" />
+        <activity android:name=".metrotime.MetroTimeActivity" />
+        <activity android:name=".metroticket.MetroTicketActivity" />
+        <activity android:name=".metromap.MetroMapActivity" />
+        <activity android:name=".setting.SettingActivity" />
+        <activity android:name=".lostfind.LostFindActivity" />
+        <activity android:name=".notification.NotificationActivity" />
+        <activity android:name=".pay.PayActivity" />
+        <activity android:name=".contact.ContactActivity" />
+        <activity android:name=".saleticket.SaleTicketActivity" />
+        <activity android:name=".web.WebActivity" />
+        <activity android:name=".searchstation.SearchStationActivity" />
+        <activity android:name=".searchline.SearchLineActivity" />
+        <activity android:name=".splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".register.RegisterActivity" />
+        <activity android:name=".login.LoginActivity" />
+        <activity
+            android:name=".main.MainActivity"
+            android:launchMode="singleInstance" />
+    </application>
+
+</manifest>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/my_info_activity_listview_textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="测试"/>
+
+    <TextView
+        android:id="@+id/my_info_activity_listview_textview2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/my_info_activity_listview_textview1"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="right|center_vertical"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:drawableRight="@drawable/ic_action_right"
+        android:text="测试"/>
+
+</RelativeLayout>

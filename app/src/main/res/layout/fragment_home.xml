@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.homefragment.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.youth.banner.Banner
+            android:id="@+id/main_activity_banner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="2dp" />
+
+        <TableLayout
+            android:id="@+id/main_activity_table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_activity_banner"
+            android:layout_marginTop="5dp">
+
+            <TableRow>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/main_activity_card_view_sale_ticket"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="1dp"
+                    app:cardBackgroundColor="#FAEEEBEB"
+                    app:cardCornerRadius="1dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/main_activity_card_view_sale_ticket_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableTop="@drawable/ic_action_metro_red"
+                        android:text="地铁购票"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/main_activity_card_view_search_line"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="1dp"
+                    app:cardBackgroundColor="#FAEEEBEB"
+                    app:cardCornerRadius="1dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/main_activity_card_view_search_line_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableTop="@drawable/ic_action_search_line_orange"
+                        android:text="线路查询"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/main_activity_card_view_search_station"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="1dp"
+                    app:cardBackgroundColor="#FAEEEBEB"
+                    app:cardCornerRadius="1dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/main_activity_card_view_search_station_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableTop="@drawable/ic_action_search_station_green"
+                        android:text="站点查询"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </android.support.v7.widget.CardView>
+            </TableRow>
+
+            <TableRow>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/main_activity_card_view_notification"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="1dp"
+                    app:cardBackgroundColor="#FAEEEBEB"
+                    app:cardCornerRadius="1dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/main_activity_card_view_notification_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableTop="@drawable/ic_action_metro_notifition_blue"
+                        android:text="地铁公告"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/main_activity_card_view_lost_find"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="1dp"
+                    app:cardBackgroundColor="#FAEEEBEB"
+                    app:cardCornerRadius="1dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/main_activity_card_view_lost_find_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableTop="@drawable/ic_action_lost_find_pink"
+                        android:text="失物招领"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/main_activity_card_view_contact_assistant"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="1dp"
+                    app:cardBackgroundColor="#FAEEEBEB"
+                    app:cardCornerRadius="1dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/main_activity_card_view_contact_assistant_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableTop="@drawable/ic_action_contact_assistant_purple"
+                        android:text="热心帮助"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </android.support.v7.widget.CardView>
+            </TableRow>
+        </TableLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_activity_relative_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_activity_table_layout"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/main_activity_textview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2A6E6C6C"
+                android:drawableLeft="@drawable/ic_action_news"
+                android:paddingLeft="10dp"
+                android:text="新闻资讯"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/main_activity_listview_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_activity_textview1">
+
+            </ListView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

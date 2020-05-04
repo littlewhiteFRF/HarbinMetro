@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEDED"
+    tools:context=".goodsinfo.GoodsInfoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/goods_info_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <RelativeLayout
+        android:id="@+id/goods_info_activity_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_below="@id/goods_info_activity_toolbar"
+        android:layout_marginTop="10dp"
+        android:background="#FFF">
+
+        <RelativeLayout
+            android:id="@+id/goods_info_activity_relativelayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/goods_info_activity_textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:text="线路ID："/>
+
+            <TextView
+                android:id="@+id/goods_info_activity_textview_lineid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/goods_info_activity_textview1"
+                android:layout_marginTop="10dp"
+                android:text="lineid"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/goods_info_activity_relativelayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goods_info_activity_relativelayout3">
+            <TextView
+                android:id="@+id/goods_info_activity_textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:text="线路："/>
+
+            <TextView
+                android:id="@+id/goods_info_activity_textview_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/goods_info_activity_textview2"
+                android:text="起点"/>
+
+            <ImageView
+                android:id="@+id/goods_info_activity_arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/goods_info_activity_textview_start"
+                android:background="@drawable/ic_action_arrow_right"/>
+
+            <TextView
+                android:id="@+id/goods_info_activity_textview_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/goods_info_activity_arrow_right"
+                android:text="终点"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/goods_info_activity_relativelayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goods_info_activity_relativelayout4">
+            <TextView
+                android:id="@+id/goods_info_activity_textview3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:text="票价："/>
+
+            <TextView
+                android:id="@+id/goods_info_activity_textview_ticketprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/goods_info_activity_textview3"
+                android:text="price"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/goods_info_activity_dash_line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/dash_line"
+            android:layout_below="@id/goods_info_activity_relativelayout5"
+            android:layerType="software" />
+
+        <RelativeLayout
+            android:id="@+id/goods_info_activity_relativelayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goods_info_activity_dash_line1">
+            <TextView
+                android:id="@+id/goods_info_activity_textview4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:text="付款方式："/>
+
+            <TextView
+                android:id="@+id/goods_info_activity_textview_paystyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/goods_info_activity_textview4"
+                android:text="paystyle"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/goods_info_activity_relativelayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goods_info_activity_relativelayout6">
+            <TextView
+                android:id="@+id/goods_info_activity_textview5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:text="创建时间："/>
+
+            <TextView
+                android:id="@+id/goods_info_activity_textview_datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/goods_info_activity_textview5"
+                android:text="datetime"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/goods_info_activity_relativelayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goods_info_activity_relativelayout7">
+            <TextView
+                android:id="@+id/goods_info_activity_textview6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:text="订单号："/>
+
+            <TextView
+                android:id="@+id/goods_info_activity_goodsid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/goods_info_activity_textview6"
+                android:text="goodsid"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/goods_info_activity_relativelayout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goods_info_activity_relativelayout8">
+            <TextView
+                android:id="@+id/goods_info_activity_textview7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:text="订单状态："/>
+
+            <TextView
+                android:id="@+id/goods_info_activity_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/goods_info_activity_textview7"
+                android:text="state"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/goods_info_activity_textview8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/goods_info_activity_relativelayout"
+        android:text="乘车码"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textColor="#000"/>
+
+    <ImageView
+        android:id="@+id/goods_info_activity_qrcode"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/goods_info_activity_textview8"/>
+
+    <RelativeLayout
+        android:id="@+id/goods_info_activity_relativelayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/goods_info_activity_qrcode">
+        <Button
+            android:id="@+id/goods_info_activity_button_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="使用"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:background="@drawable/sale_ticket_activity_button_shape"/>
+
+        <Button
+            android:id="@+id/goods_info_activity_button_quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/goods_info_activity_button_use"
+            android:text="退票"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:background="@drawable/button_shape_red"/>
+    </RelativeLayout>
+
+</RelativeLayout>

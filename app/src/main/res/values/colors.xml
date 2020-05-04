@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2AB8EC</color>
+    <color name="colorPrimaryDark">#4CAF50</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="lineYesSelect">#ECECE4</color>
+    <color name="lineNoSelect">#BEBEBD</color>
+    <color name="click">#D6D0D0</color>
+    <color name="rdb_bg">#151515</color>
+    <color name="yellow">#fdd108</color>
+    <color name="transparent">#000000</color>
+    <color name="red">#FD081C</color>
+</resources>

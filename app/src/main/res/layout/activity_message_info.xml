@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_register"
+    tools:context=".messageboard.MessageInfoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/message_info_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/message_info_activity_cardview1"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/message_info_activity_toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/message_info_activity_textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:text="我的留言："
+                android:textSize="23dp"/>
+            <TextView
+                android:id="@+id/message_info_activity_datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/message_info_activity_textview1"
+                android:text="datetime"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/message_info_activity_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/message_info_activity_textview1"
+                android:text="content"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/message_info_activity_cardview2"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/message_info_activity_cardview1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/message_info_activity_textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:text="客服回复："
+                android:textSize="23sp"/>
+
+            <TextView
+                android:id="@+id/message_info_activity_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/message_info_activity_textview2"
+                android:text="answer"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/message_info_activity_btn_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_info_activity_cardview2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="联系客服"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:background="@drawable/button_shape_green"/>
+
+</RelativeLayout>

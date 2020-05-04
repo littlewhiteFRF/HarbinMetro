@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myinfo.UpdateUserNameActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/update_username_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <EditText
+        android:id="@+id/update_username_activity_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/update_username_activity_toolbar"
+        android:layout_margin="10dp"
+        android:hint="请输入要修改的用户名"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/update_username_activity_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/update_username_activity_edittext"
+        android:layout_margin="10dp"
+        android:background="@drawable/sale_ticket_activity_button_shape"
+        android:text="修改"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="false">
+        <shape>
+            <!--圆角大小-->
+            <corners android:radius="5dip"/>
+            <!--背景填充色-->
+            <solid android:color="@color/rdb_bg"/>
+            <!--背景外围分割线颜色及宽度-->
+            <stroke android:color="@color/yellow" android:width="0.3dp"/>
+        </shape>
+    </item>
+</selector>

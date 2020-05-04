@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBE9E9"
+    tools:context=".payinfo.PayInfoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/pay_info_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/pay_info_activity_cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pay_info_activity_toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/pay_info_activity_imageview"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ali_pay_logo"/>
+
+            <TextView
+                android:id="@+id/pay_info_activity_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pay_info_activity_imageview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="付款成功"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/pay_info_activity_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pay_info_activity_textview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="40sp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/pay_info_activity_cardview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pay_info_activity_cardview1"
+        android:layout_marginTop="1dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/pay_info_activity_imageview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="订单详情"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:drawableRight="@drawable/ic_action_right"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/pay_info_activity_textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pay_info_activity_cardview2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="乘车码"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textColor="#000"/>
+
+    <ImageView
+        android:id="@+id/pay_info_activity_qrcode"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_below="@id/pay_info_activity_textview2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp" />
+
+
+
+</RelativeLayout>
